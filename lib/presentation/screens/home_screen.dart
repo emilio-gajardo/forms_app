@@ -17,6 +17,18 @@ class HomeScreen extends StatelessWidget {
             onTap: () => context.push('/cubits'),
           ),
 
+          ListTile(
+            title: const Text('Flutter Bloc'),
+            subtitle: const Text('Gestor de estado compuesto'),
+            trailing: const Icon(Icons.arrow_forward_ios_rounded),
+            onTap: () => context.push('/counter-bloc'),
+          ),
+
+          /// línea de separación
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Divider(),
+          ),
 
         ],
       ),
